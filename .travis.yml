@@ -1,6 +1,9 @@
 language: node_js
 node_js:
   - "stable"
+
+dist: bionic
+
 deploy:
   provider: pages
   skip_cleanup: true
