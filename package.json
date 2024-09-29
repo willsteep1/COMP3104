@@ -1,0 +1,12 @@
+{
+  "name": "comp3104",
+  "version": "1.0.0",
+  "description": "101435500 COMP3104 - Developer Operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Warning: No tests created yet.\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
