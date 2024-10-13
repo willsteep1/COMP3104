@@ -4,6 +4,23 @@ node_js:
 
 dist: focal
 
+branches:
+  only:
+    -main
+
+cache:
+    directories:
+    - node_modules
+
+install:
+    - npm install
+    - npm install -g yarn
+
+script:
+    #- yarn lint
+    - yarn build
+    - mv build/index.html build/404.html
+
 deploy:
   provider: pages
   skip_cleanup: true
@@ -11,3 +28,4 @@ deploy:
   local_dir: build
   on:
     branch: main
+
